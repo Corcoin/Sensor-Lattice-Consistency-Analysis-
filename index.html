@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sensor Lattice Consistency Analysis (SLCA)</title>
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --panel: #121823;
+      --text: #e6e9ef;
+      --muted: #9aa4b2;
+      --accent: #4fa3ff;
+      --border: #1f2937;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(180deg, #0b0f14, #0e1420);
+      border-bottom: 1px solid var(--border);
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.6rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.5px;
+    }
+
+    header p {
+      max-width: 820px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      background: #0e1420;
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover { color: var(--accent); }
+
+    section {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    footer {
+      background: #0e1420;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 2rem 1.5rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    code {
+      background: #0b1220;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Sensor Lattice Consistency Analysis™</h1>
+  <p>
+    A deterministic, physics-grounded system and method for verifying compatibility between digital media
+    and physical sensor acquisition pipelines. Designed for forensic, legal, and evidentiary use.
+  </p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#method">Method</a>
+  <a href="#legal">Legal</a>
+  <a href="#company">Company</a>
+</nav>
+
+<section id="about">
+  <h2>Definition</h2>
+  <div class="card">
+    <p>
+      <strong>Sensor Lattice Consistency Analysis (SLCA)</strong> is a deterministic analytical methodology
+      that evaluates whether a digital artifact is consistent with the physical constraints imposed by
+      real-world sensor acquisition systems.
+    </p>
+    <p>
+      SLCA does not perform classification of artificial intelligence systems, generative models,
+      or software tools. Instead, it measures whether observable bit-level lattice behavior
+      is compatible with physical capture.
+    </p>
+    <p>
+      The method operates independently of training data, probabilistic inference, or model attribution.
+    </p>
+  </div>
+</section>
+
+<section id="method">
+  <h2>Methodology Summary</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Physical Sensor Constraints</h3>
+      <p>
+        Physical sensors impose fixed spatial sampling, quantization, and noise characteristics
+        that form a constrained acquisition lattice. These constraints persist through compression
+        and post-processing.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Bit-Level Lattice Extraction</h3>
+      <p>
+        Media artifacts are reduced to deterministic bit-distribution representations that reflect
+        underlying acquisition behavior rather than semantic content.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Reference Distance Evaluation</h3>
+      <p>
+        Extracted lattice signatures are compared against reference baselines derived from
+        physically captured media using deterministic distance metrics.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="legal">
+  <h2>Forensic & Legal Positioning</h2>
+  <div class="card">
+    <p>
+      SLCA is structured to meet forensic reliability requirements including determinism,
+      repeatability, transparency, and independence from adaptive learning systems.
+    </p>
+    <ul>
+      <li>Does not assert authorship, intent, or identity</li>
+      <li>Does not rely on artificial intelligence classification</li>
+      <li>Evaluates physical capture compatibility exclusively</li>
+    </ul>
+    <p>
+      The methodology is suitable for expert testimony, evidentiary evaluation,
+      and technical affidavits where explainability is required.
+    </p>
+  </div>
+</section>
+
+<section id="company">
+  <h2>Company & Intellectual Property</h2>
+  <div class="card">
+    <p><strong>Founder and Originator:</strong> Brian Wesson</p>
+    <p>
+      Sensor Lattice Consistency Analysis is the subject of ongoing intellectual property protection
+      efforts, including provisional patent filings covering systems, methods, and applications.
+    </p>
+    <p>
+      This website constitutes a public technical disclosure and establishes prior art
+      for the described methodology.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p>
+    © <span id="year"></span> Sensor Lattice Consistency Analysis · All rights reserved
+  </p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
